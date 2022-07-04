@@ -31,7 +31,7 @@ const TableUtil = ({data}) => {
                               <TableCell className="tableCell"> {row.tracking_id}
                       </TableCell>
                       < TableCell className="tableCell"><div className='cell_wrapper'><img src={getProduct(row.ProductID).image} className="image" />{getProduct(row.ProductID).title}</div> </TableCell>
-                      <TableCell className="tableCell">${row.value}</TableCell>
+                      <TableCell className="tableCell">$ {row.value}</TableCell>
                               <TableCell className="tableCell">{row.OrderedOn}</TableCell>
                               <TableCell className="tableCell"><span className={`status ${row.Status}`} >{row.Status}</span></TableCell>
                           </TableRow>
