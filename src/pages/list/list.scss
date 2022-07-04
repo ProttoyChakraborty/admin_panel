@@ -1,0 +1,8 @@
+.list{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    .listContainer{
+        flex: 6;
+    }
+}

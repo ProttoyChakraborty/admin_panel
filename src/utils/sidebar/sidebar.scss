@@ -1,0 +1,72 @@
+@import "../colors.scss";
+.Sidebar{
+    min-height: 100vh;
+    background-color:$primary;
+    color:whitesmoke;
+    flex:1;
+    position: static;
+    
+    .top{
+        padding: 0.2rem,0.5rem,0.5rem,0.5rem;
+        display: flex;
+        height:10vh;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+    }
+    .middle{
+        ul{
+            padding:0;
+            margin:0;
+            list-style: none;
+            padding-left: 1rem;
+            padding-right: 0.3rem;
+            li{
+                font-size: 1rem;
+                margin-top: 0.5rem;
+                font-weight: 600;
+                ul{
+                    .sidebarElement{
+                        transition: ease-in-out 200ms;
+                        font-size: 1rem;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            align-items: center;
+                                margin-bottom: 0px !important;
+                                height: 1.35rem;
+                                padding: 2px;
+                                margin-right: 4px;
+                           }
+                                         
+                    }:hover{
+                        background-color: whitesmoke;
+                        color:$primary;
+                        border-radius: 10%;
+                    }
+                    
+                }
+          
+
+            }
+            :last-child{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .bottom{
+       h2{
+        padding-left: 1rem;
+        font-size: 15px ;
+       }
+       div{
+        width:40%;
+        margin: auto;
+       }
+        
+    }
+}

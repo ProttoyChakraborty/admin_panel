@@ -1,0 +1,50 @@
+.featuredChart{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    padding:1rem;
+    padding-bottom: 0.5rem;
+    border:1px solid grey;
+    border-radius: 5%;
+    -webkit-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+    -moz-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+    box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+    .top{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .mid{
+        height:70%;
+        .pieChartlabel{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .sales{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span{
+                font-weight: bold;
+            }
+            h3{
+                font-weight: normal;
+            }
+        }
+       
+    }
+
+}

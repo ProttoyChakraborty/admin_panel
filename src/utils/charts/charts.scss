@@ -1,0 +1,25 @@
+.chart{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin:0 3rem;
+    padding:1rem;
+    border:1px solid grey;
+    border-radius: 5%;
+    -webkit-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+    -moz-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+    box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chartbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .grid{
+            stroke:rgb(221, 221, 221)
+        }
+    }
+}

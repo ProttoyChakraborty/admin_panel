@@ -1,0 +1,79 @@
+.Sidebar {
+  min-height: 100vh;
+  background-color: rgba(128, 67, 234, 0.719);
+  color: whitesmoke;
+  width: 17vw;
+}
+
+.Sidebar .top {
+  padding: 0.2rem,0.5rem,0.5rem,0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Sidebar .top .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.Sidebar .middle ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+}
+
+.Sidebar .middle ul li {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.Sidebar .middle ul li ul .sidebarElement {
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Sidebar .middle ul li ul .sidebarElement span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px !important;
+  height: 1.35rem;
+  padding: 2px;
+  margin-right: 4px;
+}
+
+.Sidebar .middle ul li ul :hover {
+  background-color: whitesmoke;
+  color: rgba(128, 67, 234, 0.719);
+  border-radius: 10%;
+}
+
+.Sidebar .middle ul :last-child {
+  margin-bottom: 1rem;
+}
+
+.Sidebar .bottom h2 {
+  padding-left: 1rem;
+  font-size: 15px;
+}
+
+.Sidebar .bottom div {
+  width: 40%;
+  margin: auto;
+}
+/*# sourceMappingURL=sidebar.css.map */

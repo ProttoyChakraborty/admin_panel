@@ -1,0 +1,17 @@
+.home{
+    display: flex;
+    .container{
+        flex:6;
+    }
+    .widgets{
+        margin:2rem 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .charts-container{
+        display: flex;
+        margin:1rem 1rem;
+        justify-content: space-between;
+
+    }
+}
