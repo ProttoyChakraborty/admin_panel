@@ -17,6 +17,7 @@
             align-items: center;
             justify-content:space-evenly;
             .info{
+                padding: 1rem 0.5rem;
                 .title{
                     font-size: 25px;
                 }
@@ -59,7 +60,6 @@
                         background-color: black;
                         color: whitesmoke;
                         padding:3px;
-                       border-top-right-radius: 30% !important;
                        border-radius: 10%;
 
                     }

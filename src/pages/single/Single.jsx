@@ -65,6 +65,25 @@ const Single = ({ type }) => {
         </div>
       )
       break;
+    case "product":
+      const productData = require('../../Assets/DummyData/products.json')
+      const currProduct = productData.filter((product) => {
+        return product.id == parseInt(params.productid);
+      })
+      console.log(currProduct[0])
+      return (
+        <div className="single">
+          <Sidebar />
+          <div className="Container">
+            <Navbar />
+            <div className="singleContainer">
+              <h1>{currProduct[0].title}</h1>
+            </div>
+          </div>
+        </div>
+  
+      )
+    break;
     default:
       return (<div>Default</div>)
   }

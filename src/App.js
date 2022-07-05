@@ -24,7 +24,7 @@ function App() {
             </Route>
             <Route path="Products">
               <Route index element={<List Datatype="products" />} />
-              <Route path=":productid" element={<Single />} />
+              <Route path=":productid" element={<Single type="product"/>} />
               <Route path="new" element={<New inputs={productInputs} edit={false} title="Add New Product"/>} />
             </Route>
           </Route>
