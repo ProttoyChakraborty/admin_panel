@@ -1,0 +1,72 @@
+.new{
+    display: flex;
+    width:100vw;
+    .newContainer{
+        flex:6;
+        .newComponent{
+            .top,.bottom{
+                width: 90%;
+                margin: auto;
+                border:1px solid grey;
+                border-radius: 3%;
+                padding:1rem;
+                -webkit-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+                -moz-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+                box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+            }
+            .top{
+                margin-top:3rem;
+                margin-bottom: 3rem;
+                .title{
+                    font-size: 20px;
+                }
+            }
+            .bottom{
+                display: flex;
+                .left{
+                    flex:1;
+                    img{
+                        width:80%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .right{
+                    flex:2;
+                    form{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap:20px;
+                        justify-content:space-around;
+
+                        .formInput{
+                            width:40%;
+                            label{
+                                display: flex;
+                                align-items: center;
+                                .icon{
+                                    cursor:pointer;
+                                }
+                            }
+                            input{
+                                width:100%;
+                                padding:5px;
+                                border:none;
+                                border-bottom:1px solid grey;
+                            }
+                           
+                        }
+                        button{
+                            width:200px;
+                            padding:10px;
+                            border:none;
+                            background-color: black;
+                            color:white;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

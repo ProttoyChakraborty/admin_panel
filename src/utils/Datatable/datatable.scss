@@ -15,6 +15,17 @@
                 border-radius: 50%;
                 object-fit:cover !important;
         }
+        .product-container{
+            margin-right: 3rem;
+            
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 10px;
+                height: fit-content;
+            }
+        }
     }
     .cellAction{
         display: flex;

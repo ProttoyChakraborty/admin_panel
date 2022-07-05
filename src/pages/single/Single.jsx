@@ -42,7 +42,8 @@ const Single = ({ type }) => {
                   <h1 className="title">{currUser[0].name.firstname} {currUser[0].name.lastname}</h1>
                   <img className="userImg" src={currUser[0].img} />
                 </div>
-                <div className="middle">
+                  <div className="middle">
+                    <div className='edit-button'><button>Edit</button></div> 
                   <span><LocationOnIcon className='icon' />  {capitaliseFirst(currUser[0].address.street)},{capitaliseFirst(currUser[0].address.city)}</span>
                   <span><LocalPhoneIcon className='icon' />  {currUser[0].phone}</span>
                   <span><EmailIcon className='icon' />  {currUser[0].email}</span>
