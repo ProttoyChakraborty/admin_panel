@@ -1,0 +1,86 @@
+@import "../../utils/colors.scss";
+
+        .singleproductContainer{
+            width: 80%;
+            margin:5rem auto;
+            padding:2rem;
+            border:1px solid grey;
+            border-radius: 5%;
+            -webkit-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+            -moz-box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+            box-shadow: 27px 10px 59px -19px rgba(148,139,148,0.86);
+            .productinfo{
+                display:flex ;
+                width:100%;
+                margin:0;
+                padding:0;
+                .prodDesc{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1rem;
+                    .container{
+                        margin:0;
+                        width:100%;
+                        display: flex;
+                        gap:30px;
+                        .left{
+                            flex:1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:center;
+                        }
+                        .right{
+                            flex:1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            h4{
+                              margin-left: 5px;
+                            }
+                            p{
+                                margin-left: 5px;
+                            }
+                        }
+                        
+                        button{
+                            background-color: white;
+                            display: flex;
+                            align-items: center;
+                            margin-top:1rem;
+                            margin-left: 1rem;
+                            padding: 0.5rem;
+                            width:20%;
+                            font-size: 15px;
+                            gap:5px;
+                            border-radius:10%;
+                            &.edit{
+                                color:blue;
+                                border:1px solid blue;
+                            }
+                            &.delete{
+                                color:crimson;
+                                border: 1px solid crimson;
+                            }
+                        }
+                    }
+                    
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        margin: 1rem;
+                        width:60%;
+                    }
+                    h4{
+                        .icon{
+                            width: 30px;
+                            height: 30px;
+                            margin-right: 10px;
+                        }
+                        margin: 1rem;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }

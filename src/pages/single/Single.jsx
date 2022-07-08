@@ -1,17 +1,23 @@
 import React from 'react'
 import "./single-user.scss"
+import "./single-product.scss"
 import Navbar from '../../utils/navbar/Navbar'
 import Sidebar from '../../utils/sidebar/Sidebar'
 import TableUtil from '../../utils/Table/TableUtil'
 import Charts from '../../utils/charts/Charts'
 import { useParams } from 'react-router-dom'
 import { capitaliseFirst } from '../../JsUtils'
-// icons import
 
+// icons import
+import { Rating } from '@mui/material'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const user_chart_data=[{ month: "January", sales: 10033 },
@@ -70,14 +76,37 @@ const Single = ({ type }) => {
       const currProduct = productData.filter((product) => {
         return product.id == parseInt(params.productid);
       })
-      console.log(currProduct[0])
       return (
         <div className="single">
           <Sidebar />
           <div className="Container">
             <Navbar />
-            <div className="singleContainer">
-              <h1>{currProduct[0].title}</h1>
+            <div className="singleproductContainer">
+              <div className="productinfo">
+                <div className="prodImage">
+                  <img src={currProduct[0].image} style={{height:"300px", width:"300px"}} />
+                </div>
+                <div className="prodDesc">
+                  <h3>{capitaliseFirst(currProduct[0].title)}</h3>
+                  <h4 style={{color:"blue"}}>{capitaliseFirst(currProduct[0].category)}</h4>
+                  <p>{currProduct[0].description}</p>
+                  <div className="container">
+                  <div className="left">
+                  <h4> <AttachMoneyIcon className='icon'/>{currProduct[0].price}</h4>
+                  <h4> <InventoryIcon className='icon'/>{currProduct[0].stock}</h4>
+                  </div>
+                    <div className="right">
+                      <h4>Rating</h4> 
+                      <Rating name="half-rating-read" defaultValue={currProduct[0].rating.rate} precision={0.5} readOnly />
+                      <p>{ currProduct[0].rating.count} reviews</p>
+                  </div>
+                  </div>
+                  <div className="container">
+                    <button className="btn edit"><EditIcon/> Edit</button>
+                    <button className="btn delete"><DeleteIcon/> Delete</button>
+                  </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
