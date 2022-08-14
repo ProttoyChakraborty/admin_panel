@@ -32,12 +32,14 @@ const Sidebar = () => {
           <li>
             Main
             <ul>
+            <Link to="/" style={{textDecoration:"none" ,color: "white"}}>
               <li className="sidebarElement">
                 <span>
                   <DashboardIcon />
                 </span>
                 Dashboard
-              </li>
+                </li>
+              </Link>
             </ul>
           </li>
           <li>
