@@ -1,0 +1,84 @@
+.datatable {
+  height: 92%;
+}
+
+.datatable .loc {
+  font-size: 13px;
+}
+
+.datatable .cellWithImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.datatable .cellWithImg img {
+  height: 40px !important;
+  width: 40px !important;
+  padding: 0.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.datatable .cellWithImg .product-container {
+  margin-right: 3rem;
+}
+
+.datatable .cellWithImg .product-container h3 {
+  font-size: 15px;
+}
+
+.datatable .cellWithImg .product-container p {
+  font-size: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.datatable .cellAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.datatable .cellAction button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem;
+  width: 50px;
+  height: 20px;
+  border-radius: 10%;
+}
+
+.datatable .cellAction button.viewButton {
+  color: green;
+  background-color: rgba(11, 246, 11, 0.121);
+  border-radius: 20%;
+  border: 1px solid green;
+}
+
+.datatable .cellAction button.deleteButton {
+  color: crimson;
+  background-color: rgba(216, 2, 2, 0.121);
+  border-radius: 20%;
+  border: 1px solid crimson;
+}
+/*# sourceMappingURL=datatable.css.map */

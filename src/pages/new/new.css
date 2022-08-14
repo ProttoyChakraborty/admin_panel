@@ -1,1 +1,101 @@
-/* No CSS *//*# sourceMappingURL=new.css.map */
+.new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+.new .newContainer {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.new .newContainer .newComponent .top, .new .newContainer .newComponent .bottom {
+  width: 90%;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 3%;
+  padding: 1rem;
+  -webkit-box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+  box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+}
+
+.new .newContainer .newComponent .top {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.new .newContainer .newComponent .top .title {
+  font-size: 20px;
+}
+
+.new .newContainer .newComponent .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new .newContainer .newComponent .bottom .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.new .newContainer .newComponent .bottom .left img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new .newContainer .newComponent .bottom .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.new .newContainer .newComponent .bottom .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.new .newContainer .newComponent .bottom .right form .formInput {
+  width: 40%;
+}
+
+.new .newContainer .newComponent .bottom .right form .formInput label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new .newContainer .newComponent .bottom .right form .formInput label .icon {
+  cursor: pointer;
+}
+
+.new .newContainer .newComponent .bottom .right form .formInput input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.new .newContainer .newComponent .bottom .right form button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=new.css.map */

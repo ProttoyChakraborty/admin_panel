@@ -1,12 +1,15 @@
 .navbar {
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 8vh;
-  width: 100%;
 }
 
 .navbar .search-bar {
@@ -16,10 +19,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 5vh;
-  padding: 1rem;
+  margin-left: 3rem;
+  border: 1px solid lightgrey;
+}
+
+.navbar .search-bar div {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .search-bar input {
+  border: none;
+  height: 4vh;
+  width: 20vw;
 }
 
 .navbar .nav-buttons {
@@ -27,6 +39,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -34,8 +49,45 @@
   padding-bottom: 1rem;
 }
 
+.navbar .nav-buttons .button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .navbar .nav-buttons .button .avatar {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.navbar .nav-buttons .button .counter {
+  background-color: red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
 /*# sourceMappingURL=navbar.css.map */

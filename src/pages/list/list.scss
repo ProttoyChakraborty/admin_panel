@@ -4,5 +4,29 @@
     width: 100vw;
     .listContainer{
         flex: 6;
+        .headContainer{
+            display:flex;
+            justify-content: space-between;
+            width:90%;
+            margin: auto;
+            align-items: center;
+                button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding:0.5rem;
+                margin-right:1.5rem;
+                width:130px;
+                cursor: pointer;
+                height: 30px;
+                &.addButton{
+                    color:blue;
+                    background-color: rgba(66, 11, 246, 0.121);
+                    border-radius: 20%;
+                    border:1px solid blue;
+    
+                }
+                }
+        }
     }
 }

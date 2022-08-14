@@ -1,13 +1,16 @@
 import React,{useState,useEffect} from 'react'
+import{Link} from 'react-router-dom'
 import "./datatable.scss"
 import { DataGrid } from '@mui/x-data-grid';
 
 const Datatable = ({ Data, columns}) => {
   const actionColumn = [{
     field: "action", headerName: "Action", width: 200,
-    renderCell: () => {
+    renderCell: (params) => {
       return (<div className="cellAction">
+        <Link to={window.location.pathname+"/"+params.row.id}  style={{textDecoration:"none" ,color: "white"}}>
         <button className='viewButton'>View</button>
+        </Link>
         <button className='deleteButton'>Delete</button>
       </div>
       )

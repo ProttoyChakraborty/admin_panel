@@ -1,0 +1,45 @@
+.table .tableCell .cell_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.table .tableCell .cell_wrapper .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 2rem;
+}
+
+.table .tableCell .status {
+  padding: 0.7rem;
+  font-size: 15px;
+  border-radius: 30%;
+}
+
+.table .tableCell .status.Delivered {
+  color: green;
+  border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.109);
+}
+
+.table .tableCell .status.Shipping {
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  background-color: rgba(218, 165, 32, 0.135);
+}
+
+.table .tableCell .status.Cancelled {
+  color: crimson;
+  border: 1px solid crimson;
+  background-color: rgba(220, 20, 60, 0.116);
+}
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,47 @@
+.chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin: 0 3rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 5%;
+  -webkit-box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+  box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+}
+
+.chart .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chart .chartbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chart .chartbox .grid {
+  stroke: #dddddd;
+}
+/*# sourceMappingURL=charts.css.map */

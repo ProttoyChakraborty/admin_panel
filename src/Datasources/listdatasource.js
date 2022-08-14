@@ -17,9 +17,9 @@ import { capitaliseFirst } from "../JsUtils";
         )
       }
     },
-    {field:'username',headerName:"Username",width: 160},
+    {field:'username',headerName:"Username",width: 100},
     {
-      field:'email',headerName:"Email",width: 200
+      field:'email',headerName:"Email",width: 170
     },
     {
       field: 'location', headerName: "Location", width: 230,
@@ -41,13 +41,14 @@ const productColumns =[
     {
       field: 'product',
       headerName: 'Product',
-      width: 250,
+      width: 300,
       renderCell: (params) => {
+        console.log(params.row.title.slice(0,10))
         return (
           <div className="cellWithImg">
             <img classname="profile" src={params.row.image} alt="" />
             <div className="product-container">
-            <h3>{params.row.title}</h3>
+            <h3>{params.row.title.slice(0,20)}...</h3>
             </div>
            
           </div>
@@ -55,12 +56,12 @@ const productColumns =[
         )
       }
     },
-    {field:'price',headerName:"Price (in USD $)",width: 160},
+    {field:'price',headerName:"Price (in USD $)",width: 150},
     {
-      field:'stock',headerName:"Stock",width:160
+      field:'stock',headerName:"Stock",width:100
     },
     {
-      field: 'rating', headerName: "Rating", width: 230,
+      field: 'rating', headerName: "Rating", width: 100,
       renderCell: (params)=>{
         return (
           <div className="loc">

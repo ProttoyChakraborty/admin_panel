@@ -1,0 +1,93 @@
+.featuredChart {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 5%;
+  -webkit-box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+  box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+}
+
+.featuredChart .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featuredChart .mid {
+  height: 70%;
+}
+
+.featuredChart .mid .pieChartlabel {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.featuredChart .mid .sales {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featuredChart .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featuredChart .bottom .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featuredChart .bottom .box span {
+  font-weight: bold;
+}
+
+.featuredChart .bottom .box h3 {
+  font-weight: normal;
+}
+/*# sourceMappingURL=featuredCharts.css.map */

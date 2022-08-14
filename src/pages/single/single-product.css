@@ -1,0 +1,131 @@
+.singleproductContainer {
+  width: 80%;
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid grey;
+  border-radius: 5%;
+  -webkit-box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+  box-shadow: 27px 10px 59px -19px rgba(148, 139, 148, 0.86);
+}
+
+.singleproductContainer .productinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.singleproductContainer .productinfo .prodDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem;
+}
+
+.singleproductContainer .productinfo .prodDesc .container {
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.singleproductContainer .productinfo .prodDesc .container .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.singleproductContainer .productinfo .prodDesc .container .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.singleproductContainer .productinfo .prodDesc .container .right h4 {
+  margin-left: 5px;
+}
+
+.singleproductContainer .productinfo .prodDesc .container .right p {
+  margin-left: 5px;
+}
+
+.singleproductContainer .productinfo .prodDesc .container button {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  width: 20%;
+  font-size: 15px;
+  gap: 5px;
+  border-radius: 10%;
+}
+
+.singleproductContainer .productinfo .prodDesc .container button.edit {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.singleproductContainer .productinfo .prodDesc .container button.delete {
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+.singleproductContainer .productinfo .prodDesc h3 {
+  font-size: 25px;
+}
+
+.singleproductContainer .productinfo .prodDesc p {
+  margin: 1rem;
+  width: 60%;
+}
+
+.singleproductContainer .productinfo .prodDesc h4 {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.singleproductContainer .productinfo .prodDesc h4 .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=single-product.css.map */
