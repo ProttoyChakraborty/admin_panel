@@ -2,7 +2,7 @@
 
 A sales dashboard built with ReactJs , aimed at helping admins to track orders, inventory, sales and customers seamlessly. the project is deployed on firebase 
 [view deployment](https://adminpanel-13c31.web.app/)
-[]
+![Image](https://github.com/ProttoyChakraborty/admin_panel/blob/main/screenshots/Screenshot%20(76).png)
 
 ## Installation
 
